@@ -1,0 +1,33 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <!-- change whit the API -->
+            <h2>Emmanuel Gomez</h2>
+            <h4>Example@gmail.com</h4>
+        </div>
+        <img src="https://i.imgur.com/V9lUzLt.png" alt="soufiane FADIL">
+    </div>
+
+<mat-divider></mat-divider>
+
+<h2 matSubheader>Pages</h2>
+
+<a mat-list-item [routerLink]="['/']" routerLinkActive="list-item-active" >Dashboard</a>
+<a mat-list-item [routerLink]="['/posts']" routerLinkActive="list-item-active" >Posts</a>
+<a mat-list-item [routerLink]="['/articles']" routerLinkActive="list-item-active" >Articles</a>
+
+<mat-divider></mat-divider>
+
+<h2 matSubheader>Tools</h2>
+
+<a mat-list-item [routerLink]="['/contacs']" routerLinkActive="list-item-active" >
+    <mat-icon>import_contacts</mat-icon>
+    Contacs
+</a>
+
+<a mat-list-item [routerLink]="['/contacs']" routerLinkActive="list-item-active" >
+    <mat-icon>contact_phone</mat-icon>
+    Leads
+</a>
+
+</mat-nav-list>
