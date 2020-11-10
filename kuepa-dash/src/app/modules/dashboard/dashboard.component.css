@@ -1,0 +1,11 @@
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background: radial-gradient( #7F00FF, #E100FF );
+    border-radius: 50%;
+    margin: left;
+    box-shadow: 10px 5px 20px 0 gray;
+    align-items: left;
+  }
+
