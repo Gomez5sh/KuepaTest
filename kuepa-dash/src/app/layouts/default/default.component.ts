@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-default',
@@ -9,7 +10,9 @@ export class DefaultComponent implements OnInit {
 
   sideBarOpen = true;
 
-  constructor() { }
+  constructor( private http: HttpClient) {
+    this.http.get('https://api.opendota.com/api/proPlayers');
+  }
 
   ngOnInit(): void {
   }
